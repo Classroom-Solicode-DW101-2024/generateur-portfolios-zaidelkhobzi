@@ -315,13 +315,18 @@ document.addEventListener("DOMContentLoaded", () => {
         cv.appendChild(downloadButton);
     }
 
+    downloadButton.style.display = "block";
+
     // Add event listener for PDF download
     downloadButton.addEventListener("click", () => {
+        downloadButton.style.display = "none";
         html2pdf().from(cv).set({
             margin: 1,
             filename: `${newStudent.nom}_${newStudent.prenom}_CV.pdf`,
             html2canvas: { scale: 2 },
             jsPDF: { format: 'a4', orientation: 'portrait' }
-        }).save();
+        }).save().then(() => {
+            downloadButton.style.display = "block"; // Show the button again after download
+        });
     });
 });
