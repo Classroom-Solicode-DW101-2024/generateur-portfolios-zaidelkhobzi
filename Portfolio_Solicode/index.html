@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Solicode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="infos-personnel">
+        <div class="container">
+            <form method="post">
+                <!-- <h1>Portolio Solicode</h1> -->
+                <div>
+                    <label for="nom">Nom: </label>
+                    <input type="text" name="nom" id="nom">
+                </div>
+    
+                <div>
+                    <label for="prenom">Prenom: </label>
+                    <input type="text" name="prenom" id="prenom">
+                </div>
+    
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="format : nom.prenom.solicode@gmail.com">
+                </div>
+    
+                <div>
+                    <label for="phone">Téléphone: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="format : +212XXX-XX-XX-XX">
+                </div>
+    
+                <div>
+                    <label for="groupe">Groupe: </label>
+                    <select name="groupe" id="groupe">
+                        <option value="Groupe1">Groupe1</option>
+                        <option value="Groupe2">Groupe2</option>
+                        <option value="Groupe3">Groupe3</option>
+                        <option value="Groupe4">Groupe4</option>
+                    </select>
+                </div>
+    
+                <a href="projects.html" target="_blank" rel="noopener noreferrer"><input type="button" value="Suivant" id="suivant"></a>
+            </form>
+        </div>
+    </main>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
