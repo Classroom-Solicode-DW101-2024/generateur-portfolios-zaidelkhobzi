@@ -133,6 +133,16 @@ if (storedStudent) {
                 return;
             }
 
+            if (dateRealisation.value) {
+                const currentDate = new Date(dateRealisation.value);
+                const today = new Date();
+            
+                if (currentDate > today) {
+                    alert("The selected date cannot be in the future.");
+                    return;
+                }
+            }
+
             /** 
              * dateRealisation.value === ""
              * checkboxes.length === 0
